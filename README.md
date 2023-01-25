@@ -2,7 +2,7 @@
 
 Simple python script to pull data from twitter to csv file.
 
-### how to use 
+### how it works
 
 clone this repo ``` https://github.com/agilsaputra/python-script-to-csv```   
 sign in twitter account 
@@ -16,6 +16,11 @@ access_token_secret = 'YOUR_ACCESS_TOKEN_SECRET'
 ```       
 assumed you have installed python3 or python2    
 install pip  
-install tweepy library from cli ```pip install tweepy```     
+install tweepy library from cli ```pip install tweepy```      
 run ```tweet.py``` in cli ```python3 tweet.py```       
 then you got .csv file 
+
+### refrences by 'Standard search API' you can modify parameter (add words query, date(limited 1 weeks), or change location)     
+``` 
+https://developer.twitter.com/en/docs/twitter-api/v1/tweets/search/api-reference/get-search-tweets
+```
