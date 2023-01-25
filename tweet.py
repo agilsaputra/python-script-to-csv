@@ -15,7 +15,7 @@ api = tweepy.API(auth)
 
 # Search for tweets containing the word "Indonesia" and items is for limit tweet pull
 tweets = []
-for tweet in tweepy.Cursor(api.search_tweets, q='Indonesia', lang='en').items(10):
+for tweet in tweepy.Cursor(api.search_tweets, q='Indonesia', geocode='-7.7828,110.3608,50km', lang='en').items(10):
     tweets.append(tweet)
     print(tweet.text)
 # In this metod you can pull "indonesia" words tweet and "10" tweets
