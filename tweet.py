@@ -13,11 +13,12 @@ auth.set_access_token(access_token, access_token_secret)
 # Create API object
 api = tweepy.API(auth)
 
-# Search for tweets containing the word "Python" and items is for limit tweet pull
+# Search for tweets containing the word "Indonesia" and items is for limit tweet pull
 tweets = []
-for tweet in tweepy.Cursor(api.search_tweets, q='papua', lang='en').items(2):
+for tweet in tweepy.Cursor(api.search_tweets, q='Indonesia', lang='en').items(10):
     tweets.append(tweet)
     print(tweet.text)
+# In this metod you can pull "indonesia" words tweet and "10" tweets
 
 # Open a CSV file to store the tweets
 with open('tweets.csv', 'w', newline='') as csvfile:
