@@ -30,5 +30,5 @@ with open('tweets.csv', 'w', newline='') as csvfile:
     for tweet in tweets:
         writer.writerow({'id': tweet.id, 'created_at': tweet.created_at, 'text': tweet.text})
 
-print("Finished writing tweets to CSV file.")
+print("Sukses pull data dari twitter")
 
